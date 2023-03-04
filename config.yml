@@ -1,0 +1,472 @@
+#*******************************
+#        Mine Farm Regen
+#
+#        Made By HmmboYt
+#            Discord
+#   Conatact Jumbo_Hmmbo#0747
+#******************************
+
+# Thank You For Downloading
+
+#Permission Nodes
+#Use This Permission Nodes To Give Player Access
+#regen.reload
+#regen.toggle
+#regen.positions
+#regen.create
+#regen.delete
+#regen.regions
+#regen.particle
+#regen.edit
+
+#prefix of messages sent by plugin
+prefix: §f[§eRegen§f]
+# Set Custom Delay in seconds
+
+#Toggle Features
+#Players Cant Take Book From Lectern In Region
+Lock_Book: false
+
+#Blocks Will Regenerate
+Block_Regen: true
+
+#Player Or Entity Jumping On Crops Wont Damage Them
+Farm_Protect: true
+
+#Cool Region Visualiser With Particles
+Particles: true
+
+#Crops Will Regenerate As Seeds
+Regen_As_Seed: false
+
+#Crops Will Drop Xp
+Crop_Drop_XP: true
+
+#Fortune Muliplier [Fortune 1 = 2x , 2 = 3x ,3 = 4x ]
+Fortune: true
+
+#Drop Into Inventory
+Drop_to_Inv: false
+
+#Tool Durablity Gets Damaged
+Damage_Durabilty: true
+#Customising Example
+#COAL_ORE: -> Name Of Material
+#  Enabled: true -> On/Off
+#  Amount: 1 -> Drop Amount
+#  Delay: 20 -> Delay In Seconds
+#  XP: 10 -> Xp Drops [Not Levels]
+#  Drop: DIAMOND_PICKAXE -> Custom drop
+# Please Note The Name Of Drops Should Be In UPPERCASE And Space ' ' As Underscore '_'
+
+#Customise Ore Regen Setting
+COAL_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DEEPSLATE_COAL_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+COAL_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+IRON_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DEEPSLATE_IRON_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+IRON_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+GOLD_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DEEPSLATE_GOLD_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+GOLD_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DIAMOND_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DEEPSLATE_DIAMOND_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DIAMOND_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+EMERALD_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DEEPSLATE_EMERALD_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+EMERALD_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 2
+  XP: 10
+  Drop:
+  Req_Tool:
+REDSTONE_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DEEPSLATE_REDSTONE_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+REDSTONE_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+LAPIS_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DEEPSLATE_LAPIS_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+LAPIS_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+COPPER_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DEEPSLATE_COPPER_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+COPPER_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+NETHER_GOLD_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+ANCIENT_DEBRIS:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+NETHERITE_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+
+
+# Customise Copper Stages Regen
+WAXED_COPPER_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+EXPOSED_COPPER:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+WEATHERED_COPPER:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+WAXED_WEATHERED_COPPER:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+WAXED_EXPOSED_COPPER:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+WAXED_OXIDIZED_COPPER:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+OXIDIZED_COPPER:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+
+
+# Customise Wood Regen
+OAK_WOOD:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+SPRUCE_WOOD:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+JUNGLE_WOOD:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+BIRCH_WOOD:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+ACACIA_WOOD:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DARK_OAK_WOOD:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+CRIMSON_STEM:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+WARPED_STEM:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+
+#Regen Crops Regen
+WHEAT:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+CARROTS:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+BEETROOTS:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+POTATOES:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+NETHER_WART:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+PUMPKIN:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+MELON:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+SUGAR_CANE:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+BAMBOO:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+CACTUS:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+KELP:
+  Enabled: true
+  Amount: 1
+  Delay: 1
+  XP: 10
+  Drop:
+  Req_Tool:
+
+
+#Customise Other Blocks
+STONE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+DEEPSLATE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+NETHER_QUARTZ_ORE:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
+QUARTZ_BLOCK:
+  Enabled: true
+  Amount: 1
+  Delay: 20
+  XP: 10
+  Drop:
+  Req_Tool:
